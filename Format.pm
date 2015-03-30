@@ -21,7 +21,7 @@ package Template::Plugin::Number::Format;
 use strict;
 use vars qw($VERSION $DYNAMIC $AUTOLOAD);
 
-$VERSION = '1.04';
+$VERSION = '1.06';
 $DYNAMIC = 1;
 
 use Number::Format;
