@@ -2,6 +2,7 @@
 # vim: set ft=perl:
 
 use strict;
+use POSIX qw(setlocale);
 use Template::Test;
 use Template::Plugin::Number::Format;
 
@@ -15,6 +16,7 @@ my %vars = (
     "dec2"  => "42.9",
 );
 
+setlocale( &POSIX::LC_ALL, "us" );
 test_expect(\*DATA, undef, \%vars);
 
 __DATA__
