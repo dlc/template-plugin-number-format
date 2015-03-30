@@ -75,13 +75,6 @@ __DATA__
 USD 42.90
 
 -- test --
--- name format_price --
-[% USE Number.Format(INT_CURR_SYMBOL = '$') -%]
-[% dec2 | format_price %]
--- expect --
-$ 42.90
-
--- test --
 -- name format_bytes --
 [% USE Number.Format -%]
 [% data1 | format_bytes %]
