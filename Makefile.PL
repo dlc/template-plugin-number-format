@@ -11,4 +11,7 @@ WriteMakefile(
     clean => {
         FILES => 'Template-Plugin-Number-Format-$(VERSION).tar.gz',
     },
+    dist => {
+        PREOP => 'perldoc -t Format.pm > README',
+    },
 );
